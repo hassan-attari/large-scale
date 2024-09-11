@@ -1,4 +1,5 @@
 import { Badge } from "@/app/_components/badge";
+import { Price } from "@/app/_components/price/price";
 import { CourseSummary } from "@/types/course-summery.interface";
 import Image from "next/image";
 import Link from "next/link";
@@ -37,7 +38,7 @@ export const CourseCard: React.FC<CourseCardProps> = ({
         <div className="flex items-center justify-between">
           <Badge variant="warning">{duration}</Badge>
 
-          <Badge>{basePrice}</Badge>
+          <Price price={basePrice}/>
         </div>
       </div>
 
